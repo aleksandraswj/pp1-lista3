@@ -6,9 +6,23 @@ using namespace std;
 //n i m, z których co najmniej jedna jest ró¿na od zera i zwraca
 //jako wartoœæ nm.
 
-int mnozenie (int n, int m)
+double fndom (int n, int m)
 {
-   return m*n;
+    double wynik = 1;
+    if (m>=0)
+    {
+        for(int i=0; i<m; i++)
+        {
+            wynik*=n;
+        }
+    } else
+    {
+        for(int i=0; i<-m; i++)
+        {
+            wynik/=n;
+        }
+    }
+    return wynik;
 }
 
 int main()
@@ -16,6 +30,6 @@ int main()
     int n;
     int m;
     cin >> n >> m;
-    cout << mnozenie (n, m) << endl;
+    cout << fndom (n, m) << endl;
     return 0;
 }
