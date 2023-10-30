@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1698696646 source:c:\pwr\podstawyprogramowania\helloworld\prog2_2_11\main.cpp
+	<iostream>
+	<math.h>
+
